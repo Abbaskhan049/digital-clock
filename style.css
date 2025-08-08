@@ -20,7 +20,7 @@ body{
 }
 .bux{
     font-weight:600;
-    font-size:2rem;        
+    font-size:1.5rem;        
 }
 .colon{
     position:relative;
@@ -39,9 +39,10 @@ h3{
 }
 .fullpage{
     position:relative;
+    height:auto;
     top:100px;
-    height:500px;
-    width:400px;
+    width:90%;
+    max-width:400px;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px rgba(255, 255, 255 ,0.6);
     overflow: hidden;
@@ -70,11 +71,29 @@ h3{
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items:center;
-    gap:20px;
+    gap:12px;
     line-height:3rem;
 }
 .myname{
-   position:absolute;
+   position:relative;
    bottom:0px;
-   right:0px;
+   left:85px;
+}
+@media (max-width: 500px) {
+    .bex, .bux {
+        font-size: 1.5rem;
+    }
+    .colon {
+        font-size: 1.5rem;
+    }
+    .para {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .fullpage {
+        top: 20px;
+    }
 }
